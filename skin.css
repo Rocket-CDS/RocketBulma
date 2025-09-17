@@ -147,3 +147,1126 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 .dnnModuleManager:before{content:attr(data-name) !important;}
 div.dnnModuleManager.dnnSortable{min-height:10px !important;}
 
+/* DNN LOGIN FORM - Generic styling to match Bulma design */
+
+/* Center the entire login form */
+div[id$="_Login_pnlLogin"] {
+    max-width: 400px !important;
+    margin: 2rem auto !important;
+    padding: 2rem !important;
+    background: white !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+}
+
+/* Form container */
+div[id$="_Login_pnlLogin"] .dnnForm.dnnLoginService.dnnClear {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+/* Form items - make them full width and block */
+div[id$="_Login_pnlLogin"] .dnnFormItem {
+    margin-bottom: 1.5rem !important;
+    display: block !important;
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    text-align: left !important;
+}
+
+/* Labels - full width and properly aligned */
+div[id$="_Login_pnlLogin"] .dnnLabel {
+    display: block !important;
+    width: 100% !important;
+    float: none !important;
+    margin-bottom: 0.5rem !important;
+    text-align: left !important;
+}
+
+div[id$="_Login_pnlLogin"] .dnnLabel label.dnnFormLabel {
+    display: block !important;
+    width: 100% !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: #363636 !important;
+    margin-bottom: 0.5rem !important;
+    float: none !important;
+    text-align: left !important;
+}
+
+/* Input fields - full width and properly sized */
+div[id$="_Login_pnlLogin"] input[id$="_txtUsername"],
+div[id$="_Login_pnlLogin"] input[id$="_txtPassword"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0.75rem !important;
+    border: 1px solid #dbdbdb !important;
+    border-radius: 4px !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: #363636 !important;
+    background-color: #fff !important;
+    box-sizing: border-box !important;
+    float: none !important;
+    margin: 0 !important;
+    display: block !important;
+}
+
+div[id$="_Login_pnlLogin"] input[id$="_txtUsername"]:focus,
+div[id$="_Login_pnlLogin"] input[id$="_txtPassword"]:focus {
+    border-color: #3273dc !important;
+    box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25) !important;
+    outline: none !important;
+}
+
+/* Checkbox section - proper alignment */
+div[id$="_Login_pnlLogin"] .dnnFormItem:has(.dnnLoginRememberMe) {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 0.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+div[id$="_Login_pnlLogin"] .dnnFormItem:has(.dnnLoginRememberMe) .dnnFormLabel {
+    display: none !important;
+}
+
+div[id$="_Login_pnlLogin"] .dnnLoginRememberMe {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    width: auto !important;
+    float: none !important;
+}
+
+div[id$="_Login_pnlLogin"] input[id$="_chkCookie"] {
+    width: auto !important;
+    margin: 0 !important;
+    transform: scale(1.2) !important;
+    float: none !important;
+    display: inline-block !important;
+}
+
+div[id$="_Login_pnlLogin"] .dnnLoginRememberMe label {
+    margin: 0 !important;
+    font-weight: normal !important;
+    cursor: pointer !important;
+    user-select: none !important;
+    width: auto !important;
+    float: none !important;
+    display: inline-block !important;
+    font-size: 0.9rem !important;
+}
+
+/* Button container - center the buttons */
+div[id$="_Login_pnlLogin"] .dnnFormItem:has(a[id$="_cmdLogin"]) {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    flex-wrap: wrap !important;
+    margin-bottom: 1.5rem !important;
+}
+
+div[id$="_Login_pnlLogin"] .dnnFormItem:has(a[id$="_cmdLogin"]) .dnnFormLabel {
+    display: none !important;
+}
+
+/* Primary button - Connexion */
+div[id$="_Login_pnlLogin"] a[id$="_cmdLogin"].dnnPrimaryAction {
+    display: inline-block !important;
+    padding: 0.75rem 1.5rem !important;
+    margin: 0 !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    border: 1px solid #3273dc !important;
+    cursor: pointer !important;
+    transition: all 0.15s ease-in-out !important;
+    line-height: 1.5 !important;
+    white-space: nowrap !important;
+    float: none !important;
+    background-color: #3273dc !important;
+    color: #fff !important;
+    min-width: 120px !important;
+    flex-shrink: 0 !important;
+}
+
+div[id$="_Login_pnlLogin"] a[id$="_cmdLogin"].dnnPrimaryAction:hover {
+    background-color: #2366d1 !important;
+    border-color: #2366d1 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+/* Cancel button */
+div[id$="_Login_pnlLogin"] a[id$="_cancelLink"].dnnSecondaryAction {
+    display: inline-block !important;
+    padding: 0.75rem 1.5rem !important;
+    margin: 0 !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    border: 1px solid #3273dc !important;
+    cursor: pointer !important;
+    transition: all 0.15s ease-in-out !important;
+    line-height: 1.5 !important;
+    white-space: nowrap !important;
+    float: none !important;
+    background-color: transparent !important;
+    color: #3273dc !important;
+    min-width: 120px !important;
+    flex-shrink: 0 !important;
+}
+
+div[id$="_Login_pnlLogin"] a[id$="_cancelLink"].dnnSecondaryAction:hover {
+    background-color: #3273dc !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+/* Login actions container - center the secondary links */
+div[id$="_Login_pnlLogin"] .dnnFormItem:has(.dnnLoginActions) {
+    text-align: center !important;
+}
+
+div[id$="_Login_pnlLogin"] .dnnFormItem:has(.dnnLoginActions) .dnnFormLabel {
+    display: none !important;
+}
+
+div[id$="_Login_pnlLogin"] .dnnLoginActions {
+    margin-top: 0 !important;
+    display: block !important;
+    text-align: center !important;
+}
+
+div[id$="_Login_pnlLogin"] .dnnActions.dnnClear {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+}
+
+div[id$="_Login_pnlLogin"] .dnnActions li {
+    margin: 0 !important;
+    float: none !important;
+}
+
+/* Register and Reset Password buttons - smaller and centered */
+div[id$="_Login_pnlLogin"] a[id$="_registerLink"].dnnSecondaryAction,
+div[id$="_Login_pnlLogin"] a[id$="_passwordLink"].dnnSecondaryAction {
+    display: inline-block !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0 !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    border: 1px solid #dbdbdb !important;
+    cursor: pointer !important;
+    transition: all 0.15s ease-in-out !important;
+    line-height: 1.4 !important;
+    white-space: nowrap !important;
+    float: none !important;
+    background-color: #f5f5f5 !important;
+    color: #4a4a4a !important;
+    min-width: auto !important;
+}
+
+div[id$="_Login_pnlLogin"] a[id$="_registerLink"].dnnSecondaryAction:hover,
+div[id$="_Login_pnlLogin"] a[id$="_passwordLink"].dnnSecondaryAction:hover {
+    background-color: #e8e8e8 !important;
+    color: #363636 !important;
+    text-decoration: none !important;
+    border-color: #bfbfbf !important;
+}
+
+/* DNN SEND PASSWORD FORM - Generic styling to match Bulma design */
+
+/* Main form container */
+.dnnForm.dnnSendPassword.dnnClear {
+    max-width: 500px !important;
+    margin: 2rem auto !important;
+    padding: 2rem !important;
+    background: white !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+    border: none !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Help message styling - match registration form style */
+.dnnForm.dnnSendPassword .dnnFormMessage.dnnFormInfo {
+    background-color: #e7f3ff !important;
+    border: 1px solid #b3d9ff !important;
+    border-left: 4px solid #3273dc !important;
+    border-radius: 4px !important;
+    padding: 1rem !important;
+    margin-bottom: 1.5rem !important;
+    color: #0066cc !important;
+    font-size: 0.75rem !important;
+    line-height: 1.3 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+/* Form items */
+.dnnForm.dnnSendPassword .dnnFormItem {
+    margin-bottom: 1.5rem !important;
+    display: block !important;
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+}
+
+/* Labels */
+.dnnForm.dnnSendPassword .dnnLabel {
+    display: block !important;
+    width: 100% !important;
+    float: none !important;
+    margin-bottom: 0.5rem !important;
+    text-align: left !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+}
+
+.dnnForm.dnnSendPassword .dnnLabel label {
+    display: block !important;
+    width: 100% !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: #363636 !important;
+    margin-bottom: 0.5rem !important;
+    float: none !important;
+    text-align: left !important;
+}
+
+/* Hide help elements for cleaner look */
+.dnnForm.dnnSendPassword .dnnFormHelp,
+.dnnForm.dnnSendPassword .dnnTooltip {
+    display: none !important;
+}
+
+/* Email input field */
+.dnnForm.dnnSendPassword input[type="text"],
+.dnnForm.dnnSendPassword input[type="email"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0.75rem !important;
+    border: 1px solid #dbdbdb !important;
+    border-radius: 4px !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: #363636 !important;
+    background-color: #fff !important;
+    box-sizing: border-box !important;
+    float: none !important;
+    margin: 0 !important;
+    display: block !important;
+}
+
+.dnnForm.dnnSendPassword input[type="text"]:focus,
+.dnnForm.dnnSendPassword input[type="email"]:focus {
+    border-color: #3273dc !important;
+    box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25) !important;
+    outline: none !important;
+}
+
+/* Button container */
+.dnnForm.dnnSendPassword ul.dnnActions.dnnClear {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 1.5rem 0 0 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.dnnForm.dnnSendPassword ul.dnnActions li {
+    margin: 0 !important;
+    float: none !important;
+}
+
+/* Primary button - Send Reset Link */
+.dnnForm.dnnSendPassword a[id$="_cmdSendPassword"].dnnPrimaryAction {
+    display: inline-block !important;
+    padding: 0.75rem 1.5rem !important;
+    margin: 0 !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    border: 1px solid #3273dc !important;
+    cursor: pointer !important;
+    transition: all 0.15s ease-in-out !important;
+    line-height: 1.5 !important;
+    white-space: nowrap !important;
+    float: none !important;
+    background-color: #3273dc !important;
+    color: #fff !important;
+    min-width: 200px !important;
+    flex-shrink: 0 !important;
+}
+
+.dnnForm.dnnSendPassword a[id$="_cmdSendPassword"].dnnPrimaryAction:hover {
+    background-color: #2366d1 !important;
+    border-color: #2366d1 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+/* Cancel button */
+.dnnForm.dnnSendPassword a[id$="_lnkCancel"].dnnSecondaryAction {
+    display: inline-block !important;
+    padding: 0.75rem 1.5rem !important;
+    margin: 0 !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    border: 1px solid #3273dc !important;
+    cursor: pointer !important;
+    transition: all 0.15s ease-in-out !important;
+    line-height: 1.5 !important;
+    white-space: nowrap !important;
+    float: none !important;
+    background-color: transparent !important;
+    color: #3273dc !important;
+    min-width: 120px !important;
+    flex-shrink: 0 !important;
+}
+
+.dnnForm.dnnSendPassword a[id$="_lnkCancel"].dnnSecondaryAction:hover {
+    background-color: #3273dc !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+/* DNN FORM MESSAGES - Generic styling to match Bulma design */
+
+/* Warning message styling */
+div[id*="_dnnSkinMessage"].dnnFormMessage.dnnFormWarning,
+.dnnFormMessage.dnnFormWarning {
+    max-width: 500px !important;
+    margin: 1rem auto !important;
+    padding: 1rem 1.25rem !important;
+    background-color: #fff3cd !important;
+    border: 1px solid #ffeaa7 !important;
+    border-left: 4px solid #fdcb6e !important;
+    border-radius: 4px !important;
+    color: #856404 !important;
+    font-size: 0.875rem !important;
+    line-height: 1.4 !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* Error message styling */
+div[id*="_dnnSkinMessage"].dnnFormMessage.dnnFormError,
+.dnnFormMessage.dnnFormError {
+    max-width: 500px !important;
+    margin: 1rem auto !important;
+    padding: 1rem 1.25rem !important;
+    background-color: #f8d7da !important;
+    border: 1px solid #f5c6cb !important;
+    border-left: 4px solid #dc3545 !important;
+    border-radius: 4px !important;
+    color: #721c24 !important;
+    font-size: 0.875rem !important;
+    line-height: 1.4 !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* Validation Summary message styling */
+div[id*="_dnnSkinMessage"].dnnFormMessage.dnnFormValidationSummary,
+.dnnFormMessage.dnnFormValidationSummary {
+    max-width: 500px !important;
+    margin: 1rem auto !important;
+    padding: 1rem 1.25rem !important;
+    background-color: #f8d7da !important;
+    border: 1px solid #f5c6cb !important;
+    border-left: 4px solid #dc3545 !important;
+    border-radius: 4px !important;
+    color: #721c24 !important;
+    font-size: 0.875rem !important;
+    line-height: 1.4 !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* Success message styling */
+div[id*="_dnnSkinMessage"].dnnFormMessage.dnnFormSuccess,
+.dnnFormMessage.dnnFormSuccess {
+    max-width: 500px !important;
+    margin: 1rem auto !important;
+    padding: 1rem 1.25rem !important;
+    background-color: #d1ecf1 !important;
+    border: 1px solid #bee5eb !important;
+    border-left: 4px solid #17a2b8 !important;
+    border-radius: 4px !important;
+    color: #0c5460 !important;
+    font-size: 0.875rem !important;
+    line-height: 1.4 !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* Info message styling */
+div[id*="_dnnSkinMessage"].dnnFormMessage.dnnFormInfo,
+.dnnFormMessage.dnnFormInfo {
+    max-width: 500px !important;
+    margin: 1rem auto !important;
+    padding: 1rem 1.25rem !important;
+    background-color: #e7f3ff !important;
+    border: 1px solid #b3d9ff !important;
+    border-left: 4px solid #3273dc !important;
+    border-radius: 4px !important;
+    color: #0066cc !important;
+    font-size: 0.875rem !important;
+    line-height: 1.4 !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* Message text styling - generic */
+div[id*="_dnnSkinMessage"] span[id*="_lblMessage"],
+.dnnFormMessage span {
+    display: block !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+    color: inherit !important;
+}
+
+/* DNN REGISTRATION FORM - Generic styling to match Bulma design */
+
+/* Main registration form container - wider on desktop */
+.dnnForm.dnnRegistrationForm {
+    max-width: 1000px !important;
+    width: 100% !important;
+    margin: 2rem auto !important;
+    padding: 2rem !important;
+    background: white !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+    border: none !important;
+    box-sizing: border-box !important;
+}
+
+/* Remove ALL line breaks that cause spacing issues */
+.dnnForm.dnnRegistrationForm br {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    line-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Info message at the top - full width and smaller text */
+.dnnForm.dnnRegistrationForm .dnnFormItem:first-child {
+    width: 100% !important;
+    margin-bottom: 1.5rem !important;
+    box-sizing: border-box !important;
+}
+
+.dnnForm.dnnRegistrationForm .dnnFormItem:first-child .dnnFormMessage.dnnFormInfo {
+    background-color: #e7f3ff !important;
+    border: 1px solid #b3d9ff !important;
+    border-left: 4px solid #3273dc !important;
+    border-radius: 4px !important;
+    padding: 1rem !important;
+    margin: 0 !important;
+    color: #0066cc !important;
+    font-size: 0.75rem !important;
+    line-height: 1.3 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    display: block !important;
+}
+
+/* The actual text span - full width */
+.dnnForm.dnnRegistrationForm .dnnFormMessage.dnnFormInfo span[id$="_userHelpLabel"] {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    font-weight: 400 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #0066cc !important;
+    font-size: 0.75rem !important;
+    line-height: 1.3 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    box-sizing: border-box !important;
+}
+
+/* Keep the styling for bold/underlined parts but smaller */
+.dnnForm.dnnRegistrationForm .dnnFormMessage.dnnFormInfo b {
+    font-weight: 600 !important;
+    color: #004499 !important;
+    font-size: inherit !important;
+}
+
+.dnnForm.dnnRegistrationForm .dnnFormMessage.dnnFormInfo u {
+    text-decoration: underline !important;
+    text-decoration-color: #004499 !important;
+}
+
+.dnnForm.dnnRegistrationForm .dnnFormMessage.dnnFormInfo em {
+    font-style: italic !important;
+    color: #0066cc !important;
+    font-size: inherit !important;
+}
+
+/* User form container */
+.dnnForm.dnnRegistrationForm .dnnFormItem.dnnClear {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.dnnForm.dnnRegistrationForm div[id$="_Register_userForm"] {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    background: none !important;
+    border: none !important;
+}
+
+/* Form items */
+.dnnForm.dnnRegistrationForm .dnnFormItem.dnnFormShort {
+    width: 100% !important;
+    margin-bottom: 1.5rem !important;
+    display: block !important;
+    float: none !important;
+    clear: both !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+}
+
+/* Labels */
+.dnnForm.dnnRegistrationForm .dnnLabel {
+    display: block !important;
+    width: 100% !important;
+    float: none !important;
+    margin-bottom: 0.5rem !important;
+    text-align: left !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+}
+
+.dnnForm.dnnRegistrationForm .dnnLabel label {
+    display: block !important;
+    width: 100% !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: #363636 !important;
+    margin-bottom: 0.5rem !important;
+    float: none !important;
+    text-align: left !important;
+}
+
+/* Required field indicator */
+.dnnForm.dnnRegistrationForm .dnnFormRequired::after {
+    content: " *" !important;
+    color: #dc3545 !important;
+    font-weight: bold !important;
+}
+
+/* Hide help elements for cleaner look */
+.dnnForm.dnnRegistrationForm .dnnFormHelp,
+.dnnForm.dnnRegistrationForm .dnnTooltip {
+    display: none !important;
+}
+
+/* Input fields */
+.dnnForm.dnnRegistrationForm input[type="text"],
+.dnnForm.dnnRegistrationForm input[type="password"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0.75rem !important;
+    border: 1px solid #dbdbdb !important;
+    border-radius: 4px !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: #363636 !important;
+    background-color: #fff !important;
+    float: none !important;
+    margin: 0 !important;
+    display: block !important;
+}
+
+.dnnForm.dnnRegistrationForm input[type="text"]:focus,
+.dnnForm.dnnRegistrationForm input[type="password"]:focus {
+    border-color: #3273dc !important;
+    box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25) !important;
+    outline: none !important;
+}
+
+/* Password strength container */
+.dnnForm.dnnRegistrationForm .password-strength-container {
+    width: 100% !important;
+    position: relative !important;
+}
+
+/* Hide password strength meter and tooltip for cleaner look */
+.dnnForm.dnnRegistrationForm .password-strength-tooltip,
+.dnnForm.dnnRegistrationForm .meter {
+    display: none !important;
+}
+
+/* Field validation error messages */
+.dnnForm.dnnRegistrationForm .dnnFormMessage.dnnFormError {
+    margin-top: 0.5rem !important;
+    padding: 0.5rem !important;
+    background-color: #f8d7da !important;
+    border: 1px solid #f5c6cb !important;
+    border-radius: 4px !important;
+    color: #721c24 !important;
+    font-size: 0.875rem !important;
+    line-height: 1.4 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Better visual distinction for password confirmation field */
+.dnnForm.dnnRegistrationForm input.password-confirm {
+    border-left: 3px solid #17a2b8 !important;
+}
+
+.dnnForm.dnnRegistrationForm input.password-confirm:focus {
+    border-left: 3px solid #17a2b8 !important;
+    border-color: #3273dc !important;
+    box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25) !important;
+}
+
+/* GOTCHA field - Anti-spam honeypot - COMPLETELY HIDDEN */
+input[id$="_Register_gotcha"] {
+    display: none !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+/* Button container */
+.dnnForm.dnnRegistrationForm ul[id$="_Register_actionsRow"].dnnActions.dnnClear {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 2rem 0 0 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.dnnForm.dnnRegistrationForm ul.dnnActions li {
+    margin: 0 !important;
+    float: none !important;
+}
+
+/* Primary button - Registration */
+a[id$="_Register_registerButton"].dnnPrimaryAction {
+    display: inline-block !important;
+    padding: 0.75rem 1.5rem !important;
+    margin: 0 !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    border: 1px solid #3273dc !important;
+    cursor: pointer !important;
+    transition: all 0.15s ease-in-out !important;
+    line-height: 1.5 !important;
+    white-space: nowrap !important;
+    float: none !important;
+    background-color: #3273dc !important;
+    color: #fff !important;
+    min-width: 150px !important;
+    flex-shrink: 0 !important;
+}
+
+a[id$="_Register_registerButton"].dnnPrimaryAction:hover {
+    background-color: #2366d1 !important;
+    border-color: #2366d1 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+/* Cancel button */
+a[id$="_Register_cancelLink"].dnnSecondaryAction {
+    display: inline-block !important;
+    padding: 0.75rem 1.5rem !important;
+    margin: 0 !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    border: 1px solid #3273dc !important;
+    cursor: pointer !important;
+    transition: all 0.15s ease-in-out !important;
+    line-height: 1.5 !important;
+    white-space: nowrap !important;
+    float: none !important;
+    background-color: transparent !important;
+    color: #3273dc !important;
+    min-width: 120px !important;
+    flex-shrink: 0 !important;
+}
+
+a[id$="_Register_cancelLink"].dnnSecondaryAction:hover {
+    background-color: #3273dc !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+/* Social registration section - completely hidden when empty */
+.dnnForm.dnnRegistrationForm .dnnSocialRegistration {
+    display: none !important;
+}
+
+/* Show social registration properly if it gets content later */
+.dnnForm.dnnRegistrationForm .dnnSocialRegistration:has(.buttonList li) {
+    display: block !important;
+    margin-top: 1.5rem !important;
+    padding-top: 1.5rem !important;
+    border-top: 1px solid #dbdbdb !important;
+}
+
+.dnnForm.dnnRegistrationForm .dnnSocialRegistration .buttonList {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+}
+
+/* Remove any container box styling that might interfere */
+.DnnModule-Authentication .unboxed {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+/* Clear any floats */
+.dnnForm .dnnClear::after {
+    content: "" !important;
+    display: table !important;
+    clear: both !important;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Login form mobile */
+    div[id$="_Login_pnlLogin"] {
+        margin: 1rem !important;
+        padding: 1.5rem !important;
+    }
+    
+    div[id$="_Login_pnlLogin"] .dnnFormItem:has(a[id$="_cmdLogin"]) {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+    }
+    
+    div[id$="_Login_pnlLogin"] a[id$="_cmdLogin"].dnnPrimaryAction,
+    div[id$="_Login_pnlLogin"] a[id$="_cancelLink"].dnnSecondaryAction {
+        width: 100% !important;
+    }
+    
+    div[id$="_Login_pnlLogin"] .dnnActions {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+    }
+    
+    div[id$="_Login_pnlLogin"] a[id$="_registerLink"].dnnSecondaryAction,
+    div[id$="_Login_pnlLogin"] a[id$="_passwordLink"].dnnSecondaryAction {
+        width: 100% !important;
+    }
+    
+    /* Send Password form mobile */
+    .dnnForm.dnnSendPassword.dnnClear {
+        margin: 1rem !important;
+        padding: 1.5rem !important;
+        max-width: calc(100% - 2rem) !important;
+    }
+    
+    .dnnForm.dnnSendPassword ul.dnnActions.dnnClear {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+    }
+    
+    .dnnForm.dnnSendPassword a[id$="_cmdSendPassword"].dnnPrimaryAction,
+    .dnnForm.dnnSendPassword a[id$="_lnkCancel"].dnnSecondaryAction {
+        width: 100% !important;
+        min-width: auto !important;
+    }
+    
+    /* Form messages mobile */
+    div[id*="_dnnSkinMessage"].dnnFormMessage,
+    .dnnFormMessage {
+        margin: 1rem !important;
+        max-width: calc(100% - 2rem) !important;
+    }
+    
+    /* Registration form mobile */
+    .dnnForm.dnnRegistrationForm {
+        margin: 0.5rem !important;
+        padding: 1rem !important;
+        max-width: calc(100vw - 1rem) !important;
+        width: calc(100vw - 1rem) !important;
+    }
+    
+    .dnnForm.dnnRegistrationForm input[type="text"],
+    .dnnForm.dnnRegistrationForm input[type="password"] {
+        padding: 0.5rem !important;
+        font-size: 16px !important; /* Prevent zoom on iOS */
+    }
+    
+    .dnnForm.dnnRegistrationForm .dnnFormItem:first-child .dnnFormMessage.dnnFormInfo,
+    .dnnForm.dnnRegistrationForm .dnnFormMessage.dnnFormInfo span[id$="_userHelpLabel"] {
+        font-size: 0.7rem !important;
+        line-height: 1.2 !important;
+        padding: 0.75rem !important;
+    }
+    
+    .dnnForm.dnnRegistrationForm ul.dnnActions.dnnClear {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        margin: 1.5rem 0 0 0 !important;
+    }
+    
+    a[id$="_Register_registerButton"].dnnPrimaryAction,
+    a[id$="_Register_cancelLink"].dnnSecondaryAction {
+        width: 100% !important;
+        min-width: auto !important;
+        padding: 0.75rem 1rem !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .dnnForm.dnnRegistrationForm .dnnFormItem.dnnFormShort {
+        margin-bottom: 1rem !important;
+    }
+    
+    .dnnForm.dnnRegistrationForm .dnnLabel label {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* Tablet optimization */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .dnnForm.dnnRegistrationForm {
+        max-width: 650px !important;
+        margin: 1.5rem auto !important;
+        padding: 1.5rem !important;
+    }
+}
+
+/* Desktop optimization for registration form info message */
+@media screen and (min-width: 769px) {
+    .dnnForm.dnnRegistrationForm .dnnFormItem:first-child .dnnFormMessage.dnnFormInfo {
+        padding: 1.5rem 2rem !important;
+        font-size: 0.8rem !important;
+        line-height: 1.4 !important;
+    }
+}
+
+/* Fix for registration form password inputs and reset password email input - FINAL OVERRIDE */
+
+/* Registration form - ensure ALL inputs have consistent width - HIGHEST PRIORITY */
+.dnnForm.dnnRegistrationForm input[type="text"],
+.dnnForm.dnnRegistrationForm input[type="password"],
+.dnnForm.dnnRegistrationForm input[type="email"],
+.dnnForm.dnnRegistrationForm .password-strength-container input[type="password"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0.75rem !important;
+    border: 1px solid #dbdbdb !important;
+    border-radius: 4px !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: #363636 !important;
+    background-color: #fff !important;
+    float: none !important;
+    margin: 0 !important;
+    display: block !important;
+    clear: both !important;
+}
+
+/* Force password strength container to not interfere */
+.dnnForm.dnnRegistrationForm .password-strength-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    clear: both !important;
+    float: none !important;
+}
+
+/* Reset password form - fix email input that's too large */
+.dnnForm.dnnSendPassword input[type="text"],
+.dnnForm.dnnSendPassword input[type="email"],
+input[id*="_SendPassword_txtEmail"],
+input[id*="_txtEmail"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    padding: 0.75rem !important;
+    border: 1px solid #dbdbdb !important;
+    border-radius: 4px !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: #363636 !important;
+    background-color: #fff !important;
+    box-sizing: border-box !important;
+    float: none !important;
+    margin: 0 !important;
+    display: block !important;
+    clear: both !important;
+}
+
+/* Override any DNN default input styling that might be interfering */
+.dnnForm input[type="text"],
+.dnnForm input[type="password"],
+.dnnForm input[type="email"] {
+    box-sizing: border-box !important;
+    float: none !important;
+    clear: both !important;
+}
+
+/* Ensure form items don't have conflicting widths */
+.dnnForm.dnnRegistrationForm .dnnFormItem,
+.dnnForm.dnnSendPassword .dnnFormItem {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    float: none !important;
+    clear: both !important;
+}
+
+/* Mobile fixes */
+@media screen and (max-width: 768px) {
+    .dnnForm.dnnRegistrationForm input[type="text"],
+    .dnnForm.dnnRegistrationForm input[type="password"],
+    .dnnForm.dnnRegistrationForm input[type="email"],
+    .dnnForm.dnnSendPassword input[type="text"],
+    .dnnForm.dnnSendPassword input[type="email"] {
+        padding: 0.5rem !important;
+        font-size: 16px !important; /* Prevent zoom on iOS */
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* Fix for Send Password form - make it wider to match registration form */
+
+.dnnForm.dnnSendPassword.dnnClear {
+    max-width: 800px !important; /* Increased from 500px to match better proportions */
+    margin: 2rem auto !important;
+    padding: 2rem !important;
+    background: white !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+    border: none !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Ensure all form containers are consistent width */
+.dnnSendPasswordContent,
+#dnn_ctr_SendPassword_divPassword,
+#dnn_ctr_SendPassword_divEmail {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+    float: none !important;
+    clear: both !important;
+}
+
+/* Email input field - ensure it uses full available width */
+#dnn_ctr_SendPassword_txtEmail,
+.dnnForm.dnnSendPassword input[type="text"],
+.dnnForm.dnnSendPassword input[type="email"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0.75rem !important;
+    border: 1px solid #dbdbdb !important;
+    border-radius: 4px !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: #363636 !important;
+    background-color: #fff !important;
+    box-sizing: border-box !important;
+    float: none !important;
+    margin: 0 !important;
+    display: block !important;
+}
+
+/* Mobile adjustments for send password form */
+@media screen and (max-width: 768px) {
+    .dnnForm.dnnSendPassword.dnnClear {
+        margin: 1rem !important;
+        padding: 1.5rem !important;
+        max-width: calc(100% - 2rem) !important;
+    }
+    
+    #dnn_ctr_SendPassword_txtEmail,
+    .dnnForm.dnnSendPassword input[type="text"],
+    .dnnForm.dnnSendPassword input[type="email"] {
+        padding: 0.5rem !important;
+        font-size: 16px !important; /* Prevent zoom on iOS */
+    }
+}
+
