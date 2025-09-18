@@ -33,29 +33,29 @@
 					</div>
 				</div>
 			</div>
-			<div class="segment mainheader">
-				<div class="container">
-					<div class="columns is-vcentered">
-						<div class="column is-flex is-align-items-center is-full-mobile">
-							<div class="logopane is-pulled-left">
-								<dnn:LOGO id="dnnLogo" runat="server" />
-							</div>
-						</div>
-						<div class="column is-flex is-align-items-center is-full-mobile nav">
-							<div class="menu is-pulled-right">
-								<dnn:MENU MenuStyle="mainmenu" runat="server" NodeManipulator="RocketTools.DdrMenuInterface,RocketTools"></dnn:MENU>
-							</div>
-						</div>
-						<div class="column nav">
-							<div class="navicon">
-								<a id="navicon" aria-label="Menu" href="javascript:void(0);" role="button"></a></div>
-							<div class="mobilemenu is-hidden-desktop">
-								<dnn:MENU runat="server" MenuStyle="MobileMenu" NodeManipulator="RocketTools.DdrMenuInterface,RocketTools"></dnn:MENU>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+
+
+<div class="segment mainheader">
+    <div class="container">
+        <div class="columns">
+            <div class="column logopane">
+                <dnn:LOGO id="dnnLogo" runat="server" />
+            </div>
+            <div class="column menu">
+                <dnn:MENU MenuStyle="mainmenu" runat="server" NodeManipulator="RocketTools.DdrMenuInterface,RocketTools"></dnn:MENU>
+            </div>
+            <div class="column is-narrow is-hidden-tablet">
+                <div class="navicon">
+                    <a id="navicon" aria-label="Menu" href="javascript:void(0);" role="button"></a>
+                </div>
+                <div class="mobilemenu is-hidden-desktop">
+                    <dnn:MENU runat="server" MenuStyle="MobileMenu" NodeManipulator="RocketTools.DdrMenuInterface,RocketTools"></dnn:MENU>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 			<div class="segment belowheader">
 				<div class="container">
 					<div class="columns is-multiline">
