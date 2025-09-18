@@ -1270,3 +1270,45 @@ input[id*="_txtEmail"] {
     }
 }
 
+
+.mainheader .columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px; /* Add left padding to push logo away from edge */
+    gap: 40px; /* Add gap between logo and menu */
+}
+
+.mainheader .logopane {
+    flex: 0 0 auto;
+    max-width: 300px; /* Adjust this value based on your logo size */
+}
+
+.mainheader .logopane img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mainheader .menu {
+    flex: 1 1 auto;
+    text-align: right;
+    padding-right: 20px; /* Add right padding for balance */
+}
+
+@media screen and (max-width: 768px) {
+    .mainheader .menu {
+        display: none;
+    }
+    
+    .mainheader .columns {
+        padding-left: 15px; /* Reduce padding on mobile */
+        gap: 20px; /* Reduce gap on mobile */
+    }
+    
+    .mainheader .menu {
+        padding-right: 15px; /* Reduce right padding on mobile */
+    }
+}
+
+.segment.copyright{background:#ffffff;min-height: 50px;} /* Changed to white background and reduced height */
+.copyright, .copyright a:link, .copyright a:visited, .copyright span{font-size:12px;color:#333;text-decoration:none;} /* Already small at 12px, could change to 11px */
